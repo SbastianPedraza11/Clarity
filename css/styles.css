@@ -1,0 +1,123 @@
+.carousel-item img {
+    width: 100%;
+    height: 650px;
+    max-height: 700px; /* Ajusta la altura máxima de las imágenes en dispositivos grandes */
+    object-fit: cover; /* Hace que la imagen cubra el contenedor sin deformarse */
+  }
+  .post img{
+    height: 350px;
+  }
+
+ .collection img {
+  height: 500px;
+  }
+
+  /*--------Tablet-------- */
+  @media (max-width: 1199px) {
+    .carousel-item img {
+      width: 100%;
+      height: 600px; /* Ajusta la altura de las imagenes en tablets*/
+      max-height: 900px; /* Ajusta la altura máxima de las imágenes en resolucion tablets */
+      object-fit: cover; /* Hace que la imagen cubra el contenedor sin deformarse */
+    }  
+    .carousel-caption p {
+      font-size: 30px;
+    }
+    .clothes img {
+      height: 500px;
+    }
+    .categorias img {
+      height: 500px;
+    }
+    .collection img {
+      height: 400px;
+    }
+    .post img {
+      height: 350px;
+    }
+  }
+  
+  /*--------Moviles----------*/
+  @media (max-width: 767px) {
+    .carousel-item img {
+      width: 100%; /* Ajusta la altura automáticamente */
+      height: 450px; /* Asegura que ocupe el 100% del ancho del contenedor */
+      max-height: 700px; /* /* Asegura que la altura no exceda los 700px en resolucion móviles */  
+      object-fit: cover; /* Hace que la imagen cubra completamente el contenedor sin deformarse */
+    }
+    .textos{
+      font-size: 50px;
+    }
+    .carousel-item .row > div {
+      display: none; /* Ocultar todas las imágenes en dispositivos móviles / CarouselNuevaColeccion*/
+    }
+    .carousel-item .row > div:first-child {
+      display: block; /* Mostrar solo la primera imagen / CarouselNuevaColeccion */
+    }
+    .carousel-caption p {
+      font-size: 50px;
+    }
+    .post img, .clothes img, .categorias img {
+      object-fit: cover;
+    }
+    .post img { 
+      height: 250px; 
+    }
+    .clothes img { 
+      height: 600px;
+    }
+    .categorias img { 
+      height: 550px;
+    }  
+  }
+
+  /* En pantallas grandes (escritorio): mostrar las 3 imágenes en fila, sin deslizamiento / CarouselCatagorias */
+  @media (min-width: 768px) {
+  .carousel-inner.categorias {
+    display: flex;
+    justify-content: space-between; /* Espaciado entre las imágenes */
+  }
+  .carousel-item.categorias {
+    display: block;
+    width: 100%; /* Asegura que las imágenes tomen su espacio */
+  }
+  .carousel-control-prev.prev,
+  .carousel-control-next.next {
+    display: none;
+    transition: none;
+  }
+  .textos{
+    font-size: 50px;
+  }
+}
+
+/* En pantallas grandes (escritorio): mostrar las 3 imágenes en fila, sin deslizamiento / CarouselClothes */
+@media (min-width: 768px) {
+  .carousel-inner.clothes {
+    display: flex;
+    justify-content: space-between; /* Espaciado entre las imágenes */
+  }
+  .carousel-item.clothes {
+    display: block;
+    width: 100%; /* Asegura que las imágenes tomen su espacio */
+  }
+  .carousel-control-prev.prev.prev,
+  .carousel-control-next.next {
+    display: none;
+    transition: none;
+  }
+}
+
+/* -------Footer---------- */
+.social-icons a {
+  color: #000;
+  font-size: 1.5rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: brown; /* Cambia al color principal de Bootstrap */
+  
+}
+
+

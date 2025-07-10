@@ -1,0 +1,68 @@
+/* En pantallas grandes (escritorio): mostrar las 3 imágenes en fila, sin deslizamiento / CarouselCatagorias */
+@media (min-width: 768px) {
+  .carousel-inner {
+    display: flex;
+    justify-content: space-between; /* Espaciado entre las imágenes */
+  }
+
+  /* En pantallas grandes (escritorio): mostrar las 3 imágenes en fila, sin deslizamiento / CarouselClothes */
+  .carousel-item.clothes {
+    display: block;
+    width: 100%; /* Asegura que las imágenes tomen su espacio */
+  }
+
+  .carousel-item.categorias {
+    display: block;
+    width: 100%; /* Asegura que las imágenes tomen su espacio */
+  }
+
+  .carousel-control-prev.prev,
+  .carousel-control-next.next {
+    display: none;
+    transition: none;
+  }
+  
+  .textos{
+    font-size: 50px;
+  }
+}
+
+/* Tablets (max-width: 1199px) */
+@media (max-width: 1199px) {
+  .carousel-item img {
+    height: 600px;
+  }
+
+  .carousel-caption p {
+    font-size: 30px;
+  }
+}
+
+/* Móviles (max-width: 767px) */
+@media (max-width: 767px) {
+  .carousel-item img {
+    height: 450px;
+  }
+
+  .carousel-item .row > div {
+    display: none; /* Ocultar todas las imágenes en dispositivos móviles / CarouselNuevaColeccion*/
+  }
+  .carousel-item .row > div:first-child {
+    display: block; /* Mostrar solo la primera imagen / CarouselNuevaColeccion */
+  }
+
+  .carousel-caption p {
+    font-size: 40px;
+  }
+
+  .post img {
+    height: 250px;
+  }
+
+  a .textos{
+    margin: 0;
+    font-size: 30px;
+  }
+}
+
+

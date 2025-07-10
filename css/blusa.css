@@ -1,0 +1,37 @@
+/* Estilos base para el contenedor */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas grandes */
+    gap: 15px; /* Espacio entre las imágenes */
+}
+
+.blusa-item {
+    text-align: center; /* Centra el contenido dentro de cada elemento */
+}
+
+/* Estilos para las imágenes dentro del grid */
+.blusa-item img {
+    width: 100%; /* Asegura que las imágenes se ajusten al ancho del contenedor */
+    height: auto;
+    border-radius: 8px; /* Opcional: esquinas redondeadas */
+}
+
+.descripcion {
+    font-size: 14px; /* Tamaño de texto para la descripción */
+    font-weight: bold; /* Resalta el precio */
+    color: #000; /* Color gris para diferenciarlo del precio */
+    margin-top: 8px;
+}
+
+.precio {
+    font-size: 16px; /* Tamaño de texto ligeramente más grande para el precio */
+    font-weight: bold; /* Resalta el precio */
+    color: green; /* Color negro para el precio */
+}
+
+/* Media query para pantallas móviles */
+@media (max-width: 767px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas pequeñas */
+    }
+}

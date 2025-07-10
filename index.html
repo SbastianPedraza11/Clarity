@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOOD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">BLOOD</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">ROPA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">JEANS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ZAPATOS</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      ACCESORIOS
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">BOLSOS Y CARTERAS</a></li>
+                        <li><a class="dropdown-item" href="#">CORREAS</a></li>
+                        <li><a class="dropdown-item" href="#">BISUTERIA</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+      </div>
+    </div>
+</nav>
+
+<!-- Contenedor del Carousel -->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <!-- Contenido del carousel -->
+    <div class="carousel-inner">
+      <!-- Imagen 1 -->
+      <div class="carousel-item banner active">
+        <picture>
+          <source srcset="img/banner-home-temporada-lg.webp" media="(min-width: 1200px)">
+          <source srcset="img/banner-home-temporada-lg.webp" media="(min-width: 768px)">
+          <img src="img/banner-home-temporada-lg.webp" class="d-block w-100 img-fluid" alt="Imagen 1">
+        </picture>
+      </div>
+      <!-- Imagen 2 -->
+      <div class="carousel-item banner">
+        <picture>
+          <source srcset="img/banner-home-chocolate-registros-lg.webp" media="(min-width: 1200px)">
+          <source srcset="img/banner-home-chocolate-registros-lg.webp" media="(min-width: 768px)">
+          <img src="img/banner-home-chocolate-registros-lg.webp" class="d-block w-100 img-fluid" alt="Imagen 2">
+        </picture>
+      </div>
+      <!-- Imagen 3 -->
+      <div class="carousel-item banner">
+        <picture>
+          <source srcset="img/Banner-floral-home-lg.webp" media="(min-width: 1200px)">
+          <source srcset="img/Banner-floral-home-lg.webp" media="(min-width: 768px)">
+          <img src="img/Banner-floral-home-lg.webp" class="d-block w-100 img-fluid" alt="Imagen 3">
+        </picture>
+      </div>
+    </div>
+  
+    <!-- Controles de navegación (anterior/siguiente) -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+
+  <!-- Nueva Coleccion  -->
+<div class="container-fluid">
+    <div id="carouselColecciones" class="carousel slide" data-bs-ride="carousel">
+      <h1 class="title text-center mt-4 mb-4">NUEVA COLECCIÓN</h1>
+      <!-- Contenido del Carrusel -->
+      <div class="carousel-inner">
+        <!-- Grupo de imágenes 1 -->
+        <div class="carousel-item active collection">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <picture>
+                <source srcset="img/Coleccion-1.jpg" media="(min-width: 1200px)">
+                <source srcset="img/Coleccion-1.jpg" media="(min-width: 768px)">
+                <img src="img/Coleccion-1.jpg" class="d-block w-100 img-fluid" alt="Colección 1">
+              </picture>
+            </div>
+  
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <picture>
+                <source srcset="img/Coleccion-2.jpg" media="(min-width: 1200px)">
+                <source srcset="img/Coleccion-2.jpg" media="(min-width: 768px)">
+                <img src="img/Coleccion-2.jpg" class="d-block w-100 img-fluid" alt="Colección 2">
+              </picture>
+            </div>
+  
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <picture>
+                <source srcset="img/Coleccion-3.jpg" media="(min-width: 1200px)">
+                <source srcset="img/Coleccion-3.jpg" media="(min-width: 768px)">
+                <img src="img/Coleccion-3.jpg" class="d-block w-100 img-fluid" alt="Colección 3">
+              </picture>
+           </div>
+          </div>
+        </div>
+      <!-- Grupo de imágenes 2 -->
+      <div class="carousel-item collection">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <picture>
+              <source srcset="img/Coleccion-3.jpg" media="(min-width: 1200px)">
+                <source srcset="img/Coleccion-3.jpg" media="(min-width: 768px)">
+                <img src="img/Coleccion-3.jpg" class="d-block w-100 img-fluid" alt="Colección 4">
+           </picture>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <picture>
+              <source srcset="img/Coleccion-2.jpg" media="(min-width: 1200px)">
+              <source srcset="img/Coleccion-2.jpg" media="(min-width: 768px)">
+              <img src="img/Coleccion-2.jpg" class="d-block w-100 img-fluid" alt="Colección 5">
+            </picture>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <picture>
+              <source srcset="img/Coleccion-1.jpg" media="(min-width: 1200px)">
+              <source srcset="img/Coleccion-1.jpg" media="(min-width: 768px)">
+              <img src="img/Coleccion-1.jpg" class="d-block w-100 img-fluid" alt="Colección 6">
+            </picture>
+          </div>
+        </div>
+      </div>
+      <!--agregar más grupos de imágenes aquí -->
+        <div class="carousel-item collection">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <picture>
+                <source srcset="img/Coleccion-3.jpg" media="(min-width: 1200px)">
+                <source srcset="img/Coleccion-3.jpg" media="(min-width: 768px)">
+                <img src="img/Coleccion-3.jpg" class="d-block w-100 img-fluid" alt="Colección 4">
+              </picture>
+            </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+              <picture>
+                <source srcset="img/Coleccion-2.jpg" media="(min-width: 1200px)">
+                <source srcset="img/Coleccion-2.jpg" media="(min-width: 768px)">
+                <img src="img/Coleccion-2.jpg" class="d-block w-100 img-fluid" alt="Colección 5">
+              </picture>
+            </div>
+  
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <picture>
+                <source srcset="img/Coleccion-1.jpg" media="(min-width: 1200px)">
+                <source srcset="img/Coleccion-1.jpg" media="(min-width: 768px)">
+                <img src="img/Coleccion-1.jpg" class="d-block w-100 img-fluid" alt="Colección 6">
+              </picture>
+            </div>
+          </div>
+        </div>
+        <!--agregar más grupos de imágenes aquí -->
+      </div>
+  
+      <!-- Controles de Navegación -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselColecciones" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselColecciones" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </div>
+  
+  <div class="row post">
+    <div class="col-12">
+        <picture>
+            <source srcset="img/30OFF.webp" media="(min-width: 1200px)">
+            <source srcset="img/30OFF.webp" media="(min-width: 768px)">
+            <img src="img/30OFF.webp" class="d-block w-100 img-fluid mt-5" alt="Descuento del 30%">
+        </picture>
+    </div>
+  </div>
+  
+     <!-- Carrusel de Clothes -->
+     <div id="carouselClothes" class="carousel slide mt-5" data-bs-ride="false">
+      <div class="carousel-inner clothes">
+        <!-- Primer slide en móvil (1 imagen por slide en móvil) -->
+        <div class="carousel-item clothes active">
+          <div class="row">
+            <!-- Imagen 1 -->
+            <div class="col-lg-4 col-md-4 col-12 position-relative">
+                  <picture>
+                      <source srcset="img/blusas-agosto-2024.webp" media="(min-width: 1200px)">
+                      <source srcset="img/blusas-agosto-2024.webp" media="(min-width: 768px)">
+                      <a href="blusas.html"><img src="img/blusas-agosto-2024.webp" class="d-block w-100 img-fluid" alt="Categoria 1"></a>
+                  </picture>
+                  <div class="carousel-caption">
+                      <a href="blusas.html"><p class="textos">BLUSAS</p></a>
+                  </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Segundo slide en móvil (2da imagen en un slide separado) -->
+        <div class="carousel-item clothes">
+          <div class="row">
+            <!-- Imagen 2 -->
+            <div class="col-lg-4 col-md-4 col-12 position-relative">
+              <picture>
+                <source srcset="img/jeans-agosto-2024.webp" media="(min-width: 1200px)">
+                <source srcset="img/jeans-agosto-2024.webp" media="(min-width: 768px)">
+                <img src="img/jeans-agosto-2024.webp" class="d-block w-100 img-fluid" alt="Categoria 2">
+            </picture>
+            <div class="carousel-caption">
+                  <p class="textos">JEANS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Tercer slide en móvil (3ra imagen) -->
+        <div class="carousel-item clothes">
+          <div class="row">
+            <!-- Imagen 3 -->
+            <div class="col-lg-4 col-md-4 col-12 position-relative">
+              <picture>
+                <source srcset="img/zapatos-agosto-2024.webp" media="(min-width: 1200px)">
+                <source srcset="img/zapatos-agosto-2024.webp" media="(min-width: 768px)">
+                <img src="img/zapatos-agosto-2024.webp" class="d-block w-100 img-fluid" alt="Categoria 3">
+            </picture>
+            <div class="carousel-caption">
+                  <p class="textos">ZAPATOS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Botones de control del carrusel -->
+      <button class="carousel-control-prev prev" type="button" data-bs-target="#carouselClothes" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next next" type="button" data-bs-target="#carouselClothes" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+  <div class="row post">
+    <div class="col-12">
+        <picture>
+            <source srcset="img/30OFF.webp" media="(min-width: 1200px)">
+            <source srcset="img/30OFF.webp" media="(min-width: 768px)">
+            <img src="img/30OFF.webp" class="d-block w-100 img-fluid mt-5" alt="Descuento del 30%">
+        </picture>
+    </div>
+  </div>
+  
+  <div id="carouselCategorias" class="carousel slide mt-5" data-bs-ride="false">
+      <div class="carousel-inner categorias">
+        <!-- Primer slide en móvil (1 imagen por slide en móvil) -->
+        <div class="carousel-item categorias active">
+          <div class="row">
+            <!-- Imagen 1 -->
+            <div class="col-lg-4 col-md-4 col-12 position-relative">
+              <picture>
+                <source srcset="img/categoria-hombre-home-09-06-2024.webp" media="(min-width: 1200px)">
+                <source srcset="img/categoria-hombre-home-09-06-2024.webp" media="(min-width: 768px)">
+                <img src="img/categoria-hombre-home-09-06-2024.webp" class="d-block w-100 img-fluid" alt="Categoria 1">
+            </picture>
+            <div class="carousel-caption">
+                  <p class="textos">HOMBRES</p>
+            </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Segundo slide en móvil (2da imagen en un slide separado) -->
+        <div class="carousel-item categorias">
+          <div class="row">
+            <!-- Imagen 2 -->
+            <div class="col-lg-4 col-md-4 col-12 position-relative">
+              <picture>
+                <source srcset="img/categoria-mujer-home-09-06-2024.webp" media="(min-width: 1200px)">
+                <source srcset="img/categoria-mujer-home-09-06-2024.webp" media="(min-width: 768px)">
+                <img src="img/categoria-mujer-home-09-06-2024.webp" class="d-block w-100 img-fluid" alt="Categoria 1">
+            </picture>
+            <div class="carousel-caption">
+                <p class="textos">MUJERES</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Tercer slide en móvil (3ra imagen) -->
+        <div class="carousel-item categorias">
+          <div class="row">
+            <!-- Imagen 3 -->
+            <div class="col-lg-4 col-md-4 col-12 position-relative">
+                  <picture>
+                    <source srcset="img/categoria-denim-home-09-06-2024.webp" media="(min-width: 1200px)">
+                    <source srcset="img/categoria-denim-home-09-06-2024.webp" media="(min-width: 768px)">
+                    <img src="img/categoria-denim-home-09-06-2024.webp" class="d-block w-100 img-fluid" alt="Categoria 3">
+                  </picture>
+                  <div class="carousel-caption">
+                    <p class="textos">DENIN</p>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Botones de control del carrusel -->
+      <button class="carousel-control-prev prev" type="button" data-bs-target="#carouselCategorias" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next next" type="button" data-bs-target="#carouselCategorias" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+    <!-- Footer sección de redes sociales -->
+    <footer class="bg-dark text-white mt-5 py-4">
+      <div class="container text-center">
+        <h2>Síguenos en nuestras redes</h2>
+        <div class="social-icons my-3">
+          <a href="https://www.facebook.com" target="_blank" aria-label="Facebook" class="text-white mx-2">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com" target="_blank" aria-label="Instagram" class="text-white mx-2">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok" class="text-white mx-2">
+            <i class="fab fa-tiktok"></i>
+          </a>
+          <a href="https://www.youtube.com" target="_blank" aria-label="YouTube" class="text-white mx-2">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+        <p class="mb-0">&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+ <!-- Bootstrap JS y Popper.js -->
+ <script src="js/script.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

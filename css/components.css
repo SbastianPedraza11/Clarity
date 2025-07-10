@@ -1,0 +1,18 @@
+/* Estilos específicos para componentes escritorio */
+
+/* Categorías y collection tamaño*/
+.categorias img,
+.collection img {
+  height: 500px;
+}
+
+/* Clothes */
+.clothes img {
+    height: 600px;
+  }
+
+/* Post */
+.post img {
+  height: 350px;
+}
+
